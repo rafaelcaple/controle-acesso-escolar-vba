@@ -1,6 +1,23 @@
-# Sistema de Controle de Acesso
+# Sistema de Controle de Acesso Escolar
 
-Sistema de controle de acesso desenvolvido em VBA para Microsoft Excel. Permite registrar ponto, gerar backups, realizar buscas de registros, tudo através de uma interface intuitiva.
+## Sobre o Projeto
+
+Sistema de controle de acesso desenvolvido em VBA para Microsoft Excel entre junho de 2022 e agosto de 2023, **aplicado em contexto real no CIE Miécimo da Silva**.
+
+### Problema Original
+A escola enfrentava inconsistências no controle do refeitório, sem forma confiável de rastrear os acessos e prevenir duplicações.
+
+### Solução Desenvolvida
+Sistema com leitura de crachá que registrava automaticamente os acessos, implementando validações que impediam registros duplicados e garantiam rastreabilidade completa.
+
+### Evolução do Projeto
+Devido ao sucesso da solução, o sistema foi posteriormente **adaptado para controle de entrada e saída geral da escola**, melhorando significativamente a segurança e organização.
+
+### Impacto
+- Eliminou inconsistências no controle do refeitório
+- Preveniu acessos duplicados
+- Melhorou segurança no controle de entrada/saída de alunos no ambiente escolar
+- Sistema utilizado diariamente pela equipe administrativa
 
 ## Funcionalidades
 
