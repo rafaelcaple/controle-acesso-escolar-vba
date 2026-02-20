@@ -1,69 +1,74 @@
-# Sistema de Controle de Acesso Escolar
+# School Access Control System
 
-## Sobre o Projeto
+## About
 
-Sistema de controle de acesso desenvolvido em VBA para Microsoft Excel entre junho de 2022 e agosto de 2023, **aplicado em contexto real no CIE Miécimo da Silva**.
+Access control system developed in VBA for Microsoft Excel between June 2022 and August 2023, **applied in a real environment at CIE Miécimo da Silva**.
 
-### Problema Original
-A escola enfrentava inconsistências no controle do refeitório, sem forma confiável de rastrear os acessos e prevenir duplicações.
+### Original Problem
 
-### Solução Desenvolvida
-Sistema com leitura de crachá que registrava automaticamente os acessos, implementando validações que impediam registros duplicados e garantiam rastreabilidade completa.
+The school faced inconsistencies in cafeteria access control, with no reliable way to track entries and prevent duplicate records.
 
-### Evolução do Projeto
-Devido ao sucesso da solução, o sistema foi posteriormente **adaptado para controle de entrada e saída geral da escola**, melhorando significativamente a segurança e organização.
+### Solution
 
-### Impacto
-- Eliminou inconsistências no controle do refeitório
-- Preveniu acessos duplicados
-- Melhorou segurança no controle de entrada/saída de alunos no ambiente escolar
-- Sistema utilizado diariamente pela equipe administrativa
+Badge-based system that automatically logged access entries, implementing validations to prevent duplicates and ensure full traceability.
 
-## Funcionalidades
+### Evolution
 
-* Interface central para acessar todas as funcionalidades do sistema.
-* Registro de Entrada e Saída: Permite registrar o ponto de alunos.
-* Registro por Pesquisa: Buscar registros existentes por nome, matrícula ou outro critério.
-* Salvar Planilha: Salva os dados atuais do sistema.
-* Backup de Planilha: Cria cópias de segurança das planilhas.
-* Limpeza de Registros: Remove registros antigos.
+Due to the success of the solution, the system was later **adapted for general school entry and exit control**, significantly improving security and organization.
 
+### Impact
 
-### Pré-requisitos
-* Microsoft Excel 2010 ou superior
-* Macros habilitadas: Vá em **Arquivo → Opções → Central de Confiabilidade → Configurações de Macro → Habilitar todas as macros**.
+- Eliminated inconsistencies in cafeteria access control
+- Prevented duplicate entries
+- Improved security in student entry/exit control
+- System used daily by the administrative staff
 
-### Como usar
-1. Baixe a pasta `planilhas/`.
-2. Abra a planilha desejada no Excel.
-3. Use o botão já criado ou crie um botão e vincule o seguinte código: "TelaPrincipal.Show".
+## Features
 
+- Main dashboard to access all system functionalities
+- Entry and Exit Logging: Register student attendance points
+- Search by Record: Look up existing records by name, ID, or other criteria
+- Save Spreadsheet: Save current system data
+- Spreadsheet Backup: Create backup copies of spreadsheets
+- Record Cleanup: Remove outdated records
 
-### Configurações
-* Diretório de backup: Pasta onde serão salvos os backups automáticos das planilhas.
-* Diretório de foto: Pasta onde as fotos serão armazenadas.
-* Mensagens do controle de acesso: Personalize as mensagens exibidas ao registrar entradas.
-* Senha das planilhas: Defina uma senha para proteger o sistema e os dados das planilhas.
+## Prerequisites
 
+- Microsoft Excel 2010 or higher
+- Macros enabled: Go to **File → Options → Trust Center → Trust Center Settings → Macro Settings → Enable all macros**
 
-## Módulos e Formulários
+## How to run
 
-### Módulos 
+1. Download the `planilhas/` folder
+2. Open the desired spreadsheet in Excel
+3. Use the existing button or create a new one and link it to: `TelaPrincipal.Show`
 
-- var.bas: Variáveis globais do sistema
-- SalvarLimpar.bas: Funções de backup e limpeza
-- NumDeRegistrados.bas: Contagem de registros
-- Relogio.bas: Funções de data/hora
-- ScrollMouse.bas: Scroll aprimorado nos formulários
+## Configuration
 
-### Formulários
+- Backup directory: Folder where automatic spreadsheet backups will be saved
+- Photo directory: Folder where photos will be stored
+- Access control messages: Customize messages displayed when logging entries
+- Spreadsheet password: Set a password to protect the system and spreadsheet data
 
-- TelaPrincipal: Interface principal do sistema, para acessar as funcionalidades.
-- Verificador / VerificadorSaida / Verificador2 / Verificador3: Formulários responsáveis pelo controle de entrada e saída.
-- Pesquisa: Formulário para buscar registros existentes por nome, matrícula ou outro critério.
+## Modules and Forms
 
-## Código
+### Modules
 
-O código VBA está organizado dentro de src/, dividido por funcionalidades:
-- entrada-saida/ → módulos e forms de controle de entrada e saída
-- refeitorio/ → módulos e forms de controle do refeitório
+- `var.bas` — Global system variables
+- `SalvarLimpar.bas` — Backup and cleanup functions
+- `NumDeRegistrados.bas` — Record counting
+- `Relogio.bas` — Date/time functions
+- `ScrollMouse.bas` — Enhanced scroll in forms
+
+### Forms
+
+- `TelaPrincipal` — Main interface for accessing system functionalities
+- `Verificador / VerificadorSaida / Verificador2 / Verificador3` — Forms responsible for entry and exit control
+- `Pesquisa` — Form for searching existing records by name, ID, or other criteria
+
+## Code Structure
+
+The VBA code is organized inside `src/`, divided by functionality:
+
+- `entrada-saida/` — modules and forms for entry/exit control
+- `refeitorio/` — modules and forms for cafeteria control
