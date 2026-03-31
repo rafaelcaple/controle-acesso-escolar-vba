@@ -23,23 +23,28 @@ The system consists of two independent spreadsheets:
 
 ### School Entry & Exit Control
 
-![Main Dashboard – Entry/Exit](docs/images/dashboard-entrada-saida.png)
+![Main Dashboard - Entry/Exit](docs/images/dashboard1.png)
+
 *Main dashboard showing entry/exit controls and daily totals*
 
 ![Entry Registration Form](docs/images/form-entrada.png)
+
 *Entry registration form: student photo loads automatically on scan*
 
 ### Cafeteria Access
 
-![Main Dashboard – Cafeteria](docs/images/dashboard-refeitorio.png)
+![Main Dashboard - Cafeteria](docs/images/dashboard-refeitorio.png)
+
 *Cafeteria Access dashboard with separate controls for each session*
 
 ![Cafeteria Registration Form](docs/images/form-refeitorio.png)
+
 *Cafeteria Access registration form: same instant photo verification*
 
 ### Registration Flow
 
 ![Registration Flow](docs/images/registration-flow.gif)
+
 *Full registration flow: scan badge, photo loads, access confirmed*
 
 ---
@@ -116,7 +121,7 @@ This was a team project with 4 members. I was solely responsible for all technic
 
 ## How to Run
 
-1. Download the `planilhas/` folder
+1. Download the `spreadsheets/` folder
 2. Open the desired spreadsheet in Excel
 3. Enable macros when prompted
 4. Use the existing button or create a new one linked to: `TelaPrincipal.Show`
